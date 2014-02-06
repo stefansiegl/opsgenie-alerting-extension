@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="opsGenie" default="build">
+
+    <!-- Name of the output .jar file -->
+    <property name="jar.name" value="opsGenie.jar"/>
+
+    <!-- Base directory for distribution target -->
+    <property name="dist.home" value="dist/"/>
+
+    <!-- Base directory for compilation targets -->
+    <property name="build.home" value="build"/>
+
+    <!-- Main class -->
+    <property name="main.class" value="com.appdynamics.extension.AlertingExtension"/>
+
+    <!-- The base directory for all libraries (jar) files -->
+    <property name="lib.home" value="lib"/>
+
+    <!-- The directory where the scripts are placed -->
+    <property name="script.home" value="src/main/custom/actions/opsGenie"/>
+
+    <!-- Compiles the classes directory to create jar file -->
+    <property name="classes.dir" value="${build.home}/classes"/>
+
+    <!--The src directory -->
+    <property name="src.dir" value="src/main/java"/>
+
+    <property name="conf.home" value="src/main/conf"/>
+
+    <property name="custom.actions" value="src/main/custom/actions"/>
+
+
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties">
+        <classpath>
+            <pathelement location="lib/ant-contrib/ant-contrib-1.0b3.jar"/>
+        </classpath>
+    </taskdef>
+
+    <!-- Lib classpath -->
+    <path id="classpath">
+        <fileset dir="${lib.home}" includes="**/*.jar"/>
+    </path>
+
+    <!-- Cleans distribution folder -->
+    <target name="clean">
+        <delete dir="${dist.home}"/>
+        <delete dir="${build.home}"/>
+    </target>
+
+    <target name="init" depends="clean">
+        <mkdir dir="${build.home}"/>
+        <mkdir dir="${build.home}/classes"/>
+        <mkdir dir="${build.home}/classes/META-INF"/>
+        <mkdir dir="${build.home}/temp"/>
+        <mkdir dir="${build.home}/temp/custom"/>
+        <mkdir dir="${build.home}/temp/custom/actions"/>
+        <mkdir dir="${build.home}/temp/custom/actions/opsgenie"/>
+        <mkdir dir="${dist.home}"/>
+    </target>
+
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" debug="true"
+               destdir="${classes.dir}"
+               source="1.5" target="1.5" classpathref="classpath"
+                />
+    </target>
+
+    <!-- Builds the runnable jar file -->
+    <target name="build" description="Create jar and MANIFEST.MF" depends="compile">
+        <copy file="${basedir}/src/main/conf/spring.xml" todir="${classes.dir}/META-INF"/>
+
+        <!-- create the jar -->
+        <jar jarfile="${build.home}/temp/custom/actions/opsgenie/lib/${jar.name}" basedir="${build.home}/classes">
+
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="Main-Class" value="${main.class}"/>
+
+                <!-- Finally, use the generated libs path -->
+                <attribute name="Class-Path"
+                           value="./dom4j/dom4j-2.0.0-ALPHA-2.jar ./log4j/commons-logging-1.1.1.jar ./log4j/log4j-1.2.17.jar ./opsgenie/opsgenie-javasdk-all-2014.01.24.jar
+                            ./spring/spring-beans.jar ./spring/spring-core.jar ./spring/spring-context.jar ./"/>
+            </manifest>
+        </jar>
+
+        <!-- <delete dir="${classes.dir}"/> -->
+    </target>
+
+
+    <target name="package" depends="build">
+        <if>
+            <or>
+                <os family="unix"/>
+                <os family="mac"/>
+            </or>
+            <then>
+                <copy tofile="${build.home}/temp/custom/actions/custom.xml" file="${custom.actions}/custom.xml.linux"/>
+            </then>
+            <elseif>
+                <os family="windows"/>
+                <then>
+                    <copy tofile="${build.home}/temp/custom/actions/custom.xml"
+                          file="${custom.actions}/custom.xml.windows"/>
+                </then>
+            </elseif>
+            <else>
+                <then>
+                    <copy tofile="${build.home}/temp/custom/actions/custom.xml"
+                          file="${custom.actions}/custom.xml.linux"/>
+                </then>
+            </else>
+        </if>
+
+        <copy todir="${build.home}/temp/custom/actions/opsGenie">
+            <fileset dir="${script.home}" includes="opsGenie*"/>
+        </copy>
+
+        <chmod perm="a+x">
+            <fileset dir="${build.home}/temp/custom/actions/opsGenie" includes="opsGenie*"/>
+        </chmod>
+
+        <copy todir="${build.home}/temp/custom/actions/opsGenie/conf">
+
+            <fileset file="${conf.home}/log4j.dtd"/>
+            <fileset file="${conf.home}/log4j.xml"/>
+        </copy>
+
+        <copy todir="${build.home}/temp/custom/actions/opsGenie/lib">
+            <fileset file="${conf.home}/config.properties"/>
+        </copy>
+
+        <copy todir="${build.home}/temp/custom/actions/opsGenie/lib">
+            <fileset dir="${lib.home}"/>
+
+        </copy>
+
+        <zip destfile="${dist.home}/OpsGenieAlertingExtension.zip">
+            <zipfileset dir="${build.home}/temp" filemode="755"/>
+        </zip>
+    </target>
+
+</project>

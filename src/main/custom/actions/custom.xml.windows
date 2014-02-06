@@ -1,0 +1,6 @@
+<custom-actions>
+	<action>
+		<type>opsgenie</type>
+		<executable>opsGenie.bat</executable>
+	</action>
+</custom-actions>

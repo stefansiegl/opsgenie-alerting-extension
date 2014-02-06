@@ -1,0 +1,995 @@
+[main] 02 Feb 2014 20:47:56,058  INFO com.appdynamics.extension.AlertingExtension - Parsing the arguments
+[main] 02 Feb 2014 20:47:56,058 DEBUG com.appdynamics.extension.AlertingExtension - [JBoss, 2, Sun Feb 02 20:46:07 PST 2014, 1, INFO, OpsGenieTest, APP_SERVER_RESTART, 12004, 1, 1, APP_SERVER_RESTART, 1, 1, 12004, Sun Feb 02 20:46:07 PST 2014, 1, INFO, APP_SERVER_RESTART triggered at Sun Feb 02 20:46:07 PST 2014. This policy was violated because the following conditions were met for the Type:MACHINE_INSTANCE, id:3 for the last 1 minute(s): , http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=]
+[main] 02 Feb 2014 20:47:56,060  INFO com.appdynamics.extension.AlertingExtension - event_type.EVENT_TYPE: APP_SERVER_RESTART
+[main] 02 Feb 2014 20:47:56,060  INFO com.appdynamics.extension.AlertingExtension - event_type.EVENT_TYPE_NUM: 1
+[main] 02 Feb 2014 20:47:56,076  INFO com.appdynamics.extension.AlertingExtension - Alert object created: com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: null
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12004
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  entityName: APP_SERVER_RESTART
+  entityId: 12004
+  NUMBER_OF_EVENT_TYPES: 1
+  EN_INTERVAL_IN_MINUTES: 1
+  enTime: Sun Feb 02 20:46:07 PST 2014
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+}
+[main] 02 Feb 2014 20:47:56,076  INFO com.appdynamics.extension.AlertingExtension - Finished parsing arguments
+[main] 02 Feb 2014 20:47:56,155  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c9ba38: display name [org.springframework.context.support.ClassPathXmlApplicationContext@c9ba38]; startup date [Sun Feb 02 20:47:56 PST 2014]; root of context hierarchy
+[main] 02 Feb 2014 20:47:56,233  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/spring.xml]
+[main] 02 Feb 2014 20:47:56,430  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@c9ba38]: org.springframework.beans.factory.support.DefaultListableBeanFactory@c7b00c
+[main] 02 Feb 2014 20:47:56,485  INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+[main] 02 Feb 2014 20:47:56,491  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c7b00c: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,alertSender]; root of factory hierarchy
+[main] 02 Feb 2014 20:47:56,493  INFO com.appdynamics.extension.opsgenie.OpsGenie - Sending alert to opsGenie
+[main] 02 Feb 2014 20:47:56,494 DEBUG com.appdynamics.extension.opsgenie.OpsGenie - com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: null
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12004
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  entityName: APP_SERVER_RESTART
+  entityId: 12004
+  NUMBER_OF_EVENT_TYPES: 1
+  EN_INTERVAL_IN_MINUTES: 1
+  enTime: Sun Feb 02 20:46:07 PST 2014
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+}
+[main] 02 Feb 2014 20:47:59,415  INFO com.appdynamics.extension.opsgenie.OpsGenie - alert sent, alertId: 4fcac65b-716d-4889-a187-21b7c91afb35
+[main] 02 Feb 2014 20:47:59,415  INFO com.appdynamics.extension.AlertingExtension - -------------Alert Sent!---------------
+[main] 02 Feb 2014 21:16:09,027  INFO com.appdynamics.extension.AlertingExtension - Parsing the arguments
+[main] 02 Feb 2014 21:16:09,027 DEBUG com.appdynamics.extension.AlertingExtension - [JBoss, 2, Sun Feb 02 21:13:49 PST 2014, 1, INFO, OpsGenieTest, APP_SERVER_RESTART, 12024, 1, 1, APP_SERVER_RESTART, 1, 1, 12024, Sun Feb 02 21:13:49 PST 2014, 1, INFO, APP_SERVER_RESTART triggered at Sun Feb 02 21:13:49 PST 2014. This policy was violated because the following conditions were met for the Type:MACHINE_INSTANCE, id:3 for the last 1 minute(s): , http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=]
+[main] 02 Feb 2014 21:16:09,069  INFO com.appdynamics.extension.AlertingExtension - Alert object created: com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: null
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12024
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  entityName: APP_SERVER_RESTART
+  entityId: 12024
+  NUMBER_OF_EVENT_TYPES: 1
+  EN_INTERVAL_IN_MINUTES: 1
+  enTime: Sun Feb 02 21:13:49 PST 2014
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@7c6768]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary@1690726]
+}
+[main] 02 Feb 2014 21:16:09,070  INFO com.appdynamics.extension.AlertingExtension - Finished parsing arguments
+[main] 02 Feb 2014 21:16:09,114  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@15c7850: display name [org.springframework.context.support.ClassPathXmlApplicationContext@15c7850]; startup date [Sun Feb 02 21:16:09 PST 2014]; root of context hierarchy
+[main] 02 Feb 2014 21:16:09,160  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/spring.xml]
+[main] 02 Feb 2014 21:16:09,358  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@15c7850]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1df5a8f
+[main] 02 Feb 2014 21:16:09,424  INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+[main] 02 Feb 2014 21:16:09,430  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1df5a8f: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,alertSender]; root of factory hierarchy
+[main] 02 Feb 2014 21:16:09,432  INFO com.appdynamics.extension.opsgenie.OpsGenie - Sending alert to opsGenie
+[main] 02 Feb 2014 21:16:09,432 DEBUG com.appdynamics.extension.opsgenie.OpsGenie - com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: null
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12024
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  entityName: APP_SERVER_RESTART
+  entityId: 12024
+  NUMBER_OF_EVENT_TYPES: 1
+  EN_INTERVAL_IN_MINUTES: 1
+  enTime: Sun Feb 02 21:13:49 PST 2014
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@7c6768]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary@1690726]
+}
+[main] 02 Feb 2014 21:16:10,836  INFO com.appdynamics.extension.opsgenie.OpsGenie - alert sent, alertId: 3c481622-731f-4a18-ab8e-290eec095988
+[main] 02 Feb 2014 21:16:10,836  INFO com.appdynamics.extension.AlertingExtension - -------------Alert Sent!---------------
+[main] 02 Feb 2014 21:24:05,788  INFO com.appdynamics.extension.AlertingExtension - Parsing the arguments
+[main] 02 Feb 2014 21:24:05,789 DEBUG com.appdynamics.extension.AlertingExtension - [JBoss, 2, Sun Feb 02 21:22:03 PST 2014, 1, INFO, OpsGenieTest, APP_SERVER_RESTART, 12028, 1, 1, APP_SERVER_RESTART, 1, 1, 12028, Sun Feb 02 21:22:03 PST 2014, 1, INFO, APP_SERVER_RESTART triggered at Sun Feb 02 21:22:03 PST 2014. This policy was violated because the following conditions were met for the Type:MACHINE_INSTANCE, id:3 for the last 1 minute(s): , http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=]
+[main] 02 Feb 2014 21:24:05,792  INFO com.appdynamics.extension.AlertingExtension - Alert object created: com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: null
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12028
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  entityName: APP_SERVER_RESTART
+  entityId: 12028
+  NUMBER_OF_EVENT_TYPES: 1
+  EN_INTERVAL_IN_MINUTES: 1
+  enTime: Sun Feb 02 21:22:03 PST 2014
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@1f33675]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary Object {
+  EVENT_SUMMARY_ID: 12028
+  EVENT_SUMMARY_TIME: Sun Feb 02 21:22:03 PST 2014
+  EVENT_SUMMARY_TYPE: 1
+  EVENT_SUMMARY_SEVERITY: INFO
+  EVENT_SUMMARY_STRING: APP_SERVER_RESTART triggered at Sun Feb 02 21:22:03 PST 2014. This policy was violated because the following conditions were met for the Type:MACHINE_INSTANCE, id:3 for the last 1 minute(s): 
+}]
+}
+[main] 02 Feb 2014 21:24:05,792  INFO com.appdynamics.extension.AlertingExtension - Finished parsing arguments
+[main] 02 Feb 2014 21:24:05,833  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0: display name [org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0]; startup date [Sun Feb 02 21:24:05 PST 2014]; root of context hierarchy
+[main] 02 Feb 2014 21:24:05,880  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/spring.xml]
+[main] 02 Feb 2014 21:24:06,014  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b09468
+[main] 02 Feb 2014 21:24:07,762  INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+[main] 02 Feb 2014 21:24:07,768  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b09468: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,alertSender]; root of factory hierarchy
+[main] 02 Feb 2014 21:24:07,770  INFO com.appdynamics.extension.opsgenie.OpsGenie - Sending alert to opsGenie
+[main] 02 Feb 2014 21:24:07,770 DEBUG com.appdynamics.extension.opsgenie.OpsGenie - com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: null
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12028
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  entityName: APP_SERVER_RESTART
+  entityId: 12028
+  NUMBER_OF_EVENT_TYPES: 1
+  EN_INTERVAL_IN_MINUTES: 1
+  enTime: Sun Feb 02 21:22:03 PST 2014
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@1f33675]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary Object {
+  EVENT_SUMMARY_ID: 12028
+  EVENT_SUMMARY_TIME: Sun Feb 02 21:22:03 PST 2014
+  EVENT_SUMMARY_TYPE: 1
+  EVENT_SUMMARY_SEVERITY: INFO
+  EVENT_SUMMARY_STRING: APP_SERVER_RESTART triggered at Sun Feb 02 21:22:03 PST 2014. This policy was violated because the following conditions were met for the Type:MACHINE_INSTANCE, id:3 for the last 1 minute(s): 
+}]
+}
+[main] 02 Feb 2014 21:24:09,988  INFO com.appdynamics.extension.opsgenie.OpsGenie - alert sent, alertId: 39a0d7bb-237d-4908-b9be-649a361a566f
+[main] 02 Feb 2014 21:24:09,988  INFO com.appdynamics.extension.AlertingExtension - -------------Alert Sent!---------------
+[main] 02 Feb 2014 21:37:33,696  INFO com.appdynamics.extension.AlertingExtension - Parsing the arguments
+[main] 02 Feb 2014 21:37:33,697 DEBUG com.appdynamics.extension.AlertingExtension - [JBoss, 2, Sun Feb 02 21:35:16 PST 2014, 1, INFO, OpsGenieTest, APP_SERVER_RESTART, 12034, 1, 1, APP_SERVER_RESTART, 1, 1, 12034, Sun Feb 02 21:35:16 PST 2014, 1, INFO, APP_SERVER_RESTART triggered at Sun Feb 02 21:35:16 PST 2014. This policy was violated because the following conditions were met for the Type:MACHINE_INSTANCE, id:3 for the last 1 minute(s): , http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=]
+[main] 02 Feb 2014 21:37:33,700  INFO com.appdynamics.extension.AlertingExtension - Alert object created: com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: Sun Feb 02 21:35:16 PST 2014
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12034
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  notificationName: APP_SERVER_RESTART
+  notificationId: 12034
+  NUMBER_OF_EVENT_TYPES: 1
+  notificationInterval: 1
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@1f33675]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary Object {
+  EVENT_SUMMARY_ID: 12034
+  EVENT_SUMMARY_TIME: Sun Feb 02 21:35:16 PST 2014
+  EVENT_SUMMARY_TYPE: 1
+  EVENT_SUMMARY_SEVERITY: INFO
+  EVENT_SUMMARY_STRING: APP_SERVER_RESTART triggered at Sun Feb 02 21:35:16 PST 2014. This policy was violated because the following conditions were met for the Type:MACHINE_INSTANCE, id:3 for the last 1 minute(s): 
+}]
+}
+[main] 02 Feb 2014 21:37:33,700  INFO com.appdynamics.extension.AlertingExtension - Finished parsing arguments
+[main] 02 Feb 2014 21:37:33,741  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0: display name [org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0]; startup date [Sun Feb 02 21:37:33 PST 2014]; root of context hierarchy
+[main] 02 Feb 2014 21:37:33,790  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/spring.xml]
+[main] 02 Feb 2014 21:37:33,911  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b09468
+[main] 02 Feb 2014 21:37:33,954  INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+[main] 02 Feb 2014 21:37:33,960  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b09468: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,alertSender]; root of factory hierarchy
+[main] 02 Feb 2014 21:37:33,963  INFO com.appdynamics.extension.opsgenie.OpsGenie - Sending alert to opsGenie
+[main] 02 Feb 2014 21:37:33,963 DEBUG com.appdynamics.extension.opsgenie.OpsGenie - com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: Sun Feb 02 21:35:16 PST 2014
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12034
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  notificationName: APP_SERVER_RESTART
+  notificationId: 12034
+  NUMBER_OF_EVENT_TYPES: 1
+  notificationInterval: 1
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@1f33675]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary Object {
+  EVENT_SUMMARY_ID: 12034
+  EVENT_SUMMARY_TIME: Sun Feb 02 21:35:16 PST 2014
+  EVENT_SUMMARY_TYPE: 1
+  EVENT_SUMMARY_SEVERITY: INFO
+  EVENT_SUMMARY_STRING: APP_SERVER_RESTART triggered at Sun Feb 02 21:35:16 PST 2014. This policy was violated because the following conditions were met for the Type:MACHINE_INSTANCE, id:3 for the last 1 minute(s): 
+}]
+}
+[main] 02 Feb 2014 21:37:35,950  INFO com.appdynamics.extension.opsgenie.OpsGenie - alert sent, alertId: 8b6e674d-27f2-48d6-9f35-b774f04478e2
+[main] 02 Feb 2014 21:37:35,950  INFO com.appdynamics.extension.AlertingExtension - -------------Alert Sent!---------------
+[main] 02 Feb 2014 21:53:58,306  INFO com.appdynamics.extension.AlertingExtension - Parsing the arguments
+[main] 02 Feb 2014 21:53:58,307 DEBUG com.appdynamics.extension.AlertingExtension - [JBoss, 2, Sun Feb 02 21:52:09 PST 2014, 1, INFO, OpsGenieTest, APP_SERVER_RESTART, 12039, 1, 1, APP_SERVER_RESTART, 1, 1, 12039, Sun Feb 02 21:52:09 PST 2014, 1, INFO, APP_SERVER_RESTART triggered at Sun Feb 02 21:52:09 PST 2014. This policy was violated because the following conditions were met for the Type:MACHINE_INSTANCE, id:3 for the last 1 minute(s): , http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=]
+[main] 02 Feb 2014 21:53:58,310  INFO com.appdynamics.extension.AlertingExtension - Alert object created: com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: Sun Feb 02 21:52:09 PST 2014
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12039
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  notificationName: APP_SERVER_RESTART
+  notificationId: 12039
+  NUMBER_OF_EVENT_TYPES: 1
+  notificationInterval: 1
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@1f33675]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary Object {
+  EVENT_SUMMARY_ID: 
+  EVENT_SUMMARY_TIME: 
+  EVENT_SUMMARY_TYPE: 
+  EVENT_SUMMARY_SEVERITY: 
+  EVENT_SUMMARY_STRING: 
+}]
+}
+[main] 02 Feb 2014 21:53:58,310  INFO com.appdynamics.extension.AlertingExtension - Finished parsing arguments
+[main] 02 Feb 2014 21:53:58,415  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0: display name [org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0]; startup date [Sun Feb 02 21:53:58 PST 2014]; root of context hierarchy
+[main] 02 Feb 2014 21:53:58,461  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/spring.xml]
+[main] 02 Feb 2014 21:53:58,586  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b09468
+[main] 02 Feb 2014 21:53:58,619  INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+[main] 02 Feb 2014 21:53:58,625  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b09468: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,alertSender]; root of factory hierarchy
+[main] 02 Feb 2014 21:53:58,627  INFO com.appdynamics.extension.opsgenie.OpsGenie - Sending alert to opsGenie
+[main] 02 Feb 2014 21:53:58,627 DEBUG com.appdynamics.extension.opsgenie.OpsGenie - com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: Sun Feb 02 21:52:09 PST 2014
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12039
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  notificationName: APP_SERVER_RESTART
+  notificationId: 12039
+  NUMBER_OF_EVENT_TYPES: 1
+  notificationInterval: 1
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@1f33675]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary Object {
+  EVENT_SUMMARY_ID: 
+  EVENT_SUMMARY_TIME: 
+  EVENT_SUMMARY_TYPE: 
+  EVENT_SUMMARY_SEVERITY: 
+  EVENT_SUMMARY_STRING: 
+}]
+}
+[main] 02 Feb 2014 21:53:59,772  INFO com.appdynamics.extension.opsgenie.OpsGenie - alert sent, alertId: 04382e99-3b3d-4ec5-9f05-a2186bd4f62c
+[main] 02 Feb 2014 21:53:59,772  INFO com.appdynamics.extension.AlertingExtension - -------------Alert Sent!---------------
+[main] 02 Feb 2014 22:02:56,253  INFO com.appdynamics.extension.AlertingExtension - Parsing the arguments
+[main] 02 Feb 2014 22:02:56,254 DEBUG com.appdynamics.extension.AlertingExtension - [JBoss, 2, Sun Feb 02 22:01:19 PST 2014, 1, INFO, OpsGenieTest, APP_SERVER_RESTART, 12127, 1, 1, APP_SERVER_RESTART, 1, 1, 12127, Sun Feb 02 22:01:19 PST 2014, 1, INFO, APP_SERVER_RESTART triggered at Sun Feb 02 22:01:19 PST 2014. This policy was violated because the following conditions were met for the Type:MACHINE_INSTANCE, id:3 for the last 1 minute(s): , http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=]
+[main] 02 Feb 2014 22:02:56,258  INFO com.appdynamics.extension.AlertingExtension - Alert object created: com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: Sun Feb 02 22:01:19 PST 2014
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12127
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  notificationName: APP_SERVER_RESTART
+  notificationId: 12127
+  NUMBER_OF_EVENT_TYPES: 1
+  notificationInterval: 1
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@1f33675]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary Object {
+  EVENT_SUMMARY_ID: 
+  EVENT_SUMMARY_TIME: 
+  EVENT_SUMMARY_TYPE: 
+  EVENT_SUMMARY_SEVERITY: 
+  EVENT_SUMMARY_STRING: 
+}]
+}
+[main] 02 Feb 2014 22:02:56,258  INFO com.appdynamics.extension.AlertingExtension - Finished parsing arguments
+[main] 02 Feb 2014 22:02:56,296  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0: display name [org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0]; startup date [Sun Feb 02 22:02:56 PST 2014]; root of context hierarchy
+[main] 02 Feb 2014 22:02:56,339  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/spring.xml]
+[main] 02 Feb 2014 22:02:56,458  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b09468
+[main] 02 Feb 2014 22:02:56,495  INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+[main] 02 Feb 2014 22:02:56,501  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b09468: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,alertSender]; root of factory hierarchy
+[main] 02 Feb 2014 22:02:56,503  INFO com.appdynamics.extension.opsgenie.OpsGenie - Sending alert to opsGenie
+[main] 02 Feb 2014 22:02:56,503 DEBUG com.appdynamics.extension.opsgenie.OpsGenie - com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: Sun Feb 02 22:01:19 PST 2014
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12127
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  notificationName: APP_SERVER_RESTART
+  notificationId: 12127
+  NUMBER_OF_EVENT_TYPES: 1
+  notificationInterval: 1
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@1f33675]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary Object {
+  EVENT_SUMMARY_ID: 
+  EVENT_SUMMARY_TIME: 
+  EVENT_SUMMARY_TYPE: 
+  EVENT_SUMMARY_SEVERITY: 
+  EVENT_SUMMARY_STRING: 
+}]
+}
+[main] 02 Feb 2014 22:02:58,133  INFO com.appdynamics.extension.opsgenie.OpsGenie - alert sent, alertId: 9be82081-ac64-428e-ad86-ed9038d4eeb1
+[main] 02 Feb 2014 22:02:58,133  INFO com.appdynamics.extension.AlertingExtension - -------------Alert Sent!---------------
+[main] 02 Feb 2014 22:08:57,632  INFO com.appdynamics.extension.AlertingExtension - Parsing the arguments
+[main] 02 Feb 2014 22:08:57,632 DEBUG com.appdynamics.extension.AlertingExtension - [JBoss, 2, Sun Feb 02 22:07:34 PST 2014, 1, INFO, OpsGenieTest, APP_SERVER_RESTART, 12198, 1, 1, APP_SERVER_RESTART, 1, 1, 12198, Sun Feb 02 22:07:34 PST 2014, 1, INFO, APP_SERVER_RESTART triggered at Sun Feb 02 22:07:34 PST 2014. This policy was violated because the following conditions were met for the Type:MACHINE_INSTANCE, id:3 for the last 1 minute(s): , http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=]
+[main] 02 Feb 2014 22:08:57,636  INFO com.appdynamics.extension.AlertingExtension - Alert object created: com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: Sun Feb 02 22:07:34 PST 2014
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12198
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  notificationName: APP_SERVER_RESTART
+  notificationId: 12198
+  NUMBER_OF_EVENT_TYPES: 1
+  notificationInterval: 1
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@1f33675]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary Object {
+  EVENT_SUMMARY_ID: 
+  EVENT_SUMMARY_TIME: 
+  EVENT_SUMMARY_TYPE: 
+  EVENT_SUMMARY_SEVERITY: 
+  EVENT_SUMMARY_STRING: 
+}]
+}
+[main] 02 Feb 2014 22:08:57,636  INFO com.appdynamics.extension.AlertingExtension - Finished parsing arguments
+[main] 02 Feb 2014 22:08:57,673  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0: display name [org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0]; startup date [Sun Feb 02 22:08:57 PST 2014]; root of context hierarchy
+[main] 02 Feb 2014 22:08:57,715  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/spring.xml]
+[main] 02 Feb 2014 22:08:57,824  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b09468
+[main] 02 Feb 2014 22:08:57,857  INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+[main] 02 Feb 2014 22:08:57,862  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b09468: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,alertSender]; root of factory hierarchy
+[main] 02 Feb 2014 22:08:57,864  INFO com.appdynamics.extension.opsgenie.OpsGenie - Sending alert to opsGenie
+[main] 02 Feb 2014 22:08:57,864 DEBUG com.appdynamics.extension.opsgenie.OpsGenie - com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: Sun Feb 02 22:07:34 PST 2014
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12198
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  notificationName: APP_SERVER_RESTART
+  notificationId: 12198
+  NUMBER_OF_EVENT_TYPES: 1
+  notificationInterval: 1
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@1f33675]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary Object {
+  EVENT_SUMMARY_ID: 
+  EVENT_SUMMARY_TIME: 
+  EVENT_SUMMARY_TYPE: 
+  EVENT_SUMMARY_SEVERITY: 
+  EVENT_SUMMARY_STRING: 
+}]
+}
+[main] 02 Feb 2014 22:08:59,489  INFO com.appdynamics.extension.opsgenie.OpsGenie - alert sent, alertId: 1d51b124-7ddf-4c8a-862a-8c307f1bf9ff
+[main] 02 Feb 2014 22:08:59,490  INFO com.appdynamics.extension.AlertingExtension - -------------Alert Sent!---------------
+[main] 02 Feb 2014 22:16:58,087  INFO com.appdynamics.extension.AlertingExtension - Parsing the arguments
+[main] 02 Feb 2014 22:16:58,088 DEBUG com.appdynamics.extension.AlertingExtension - [JBoss, 2, Sun Feb 02 22:15:55 PST 2014, 1, ERROR, OpsGenieTest, Business Transaction error rate is much higher than normal, 9, 10, BUSINESS_TRANSACTION, /extest/exc.jsp, 454, 1, APPLICATION, JBoss, 2, 1, APPLICATION, JBoss, 2, Errors per Minute Condition, 385, GREATER_THAN, ABSOLUTE, 5, 244.0, Business Transaction error rate is much higher than normal triggered at Sun Feb 02 22:15:55 PST 2014. This policy was violated because the following conditions were met for the Type:BUSINESS_TRANSACTION, id:454 for the last 10 minute(s):   For Evaluation Entity: JBoss Application - Errors per Minute Condition is greater than 5. Observed value = 244.0, 12, http://ubuj:8090/controller/#location=APP_INCIDENT_DETAIL&incident=, POLICY_OPEN_CRITICAL]
+[main] 02 Feb 2014 22:16:58,091  INFO com.appdynamics.extension.AlertingExtension - Alert object created: com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null/extest/exc.jsp 
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: ERROR
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: Business Transaction error rate is much higher than normal
+  alertTime: null
+  affectedEntityType: BUSINESS_TRANSACTION
+  summaryMessage: Business Transaction error rate is much higher than normal triggered at Sun Feb 02 22:15:55 PST 2014. This policy was violated because the following conditions were met for the Type:BUSINESS_TRANSACTION, id:454 for the last 10 minute(s):   For Evaluation Entity: JBoss Application - Errors per Minute Condition is greater than 5. Observed value = 244.0
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_INCIDENT_DETAIL&incident=12
+  healthRuleViolation: true
+  applicationId: 2
+  priority: 1
+  notificationName: null
+  notificationId: null
+  NUMBER_OF_EVENT_TYPES: 0
+  notificationInterval: null
+  incidentId: 12
+  PVN_ALERT_TIME: Sun Feb 02 22:15:55 PST 2014
+  policyId: 9
+  PVN_TIME_PERIOD_IN_MINUTES: 10
+  affectedEntityName: /extest/exc.jsp
+  affectedEntityId: 454
+  NUMBER_OF_EVALUATION_ENTITIES: 1
+  NUMBER_OF_EVENT_SUMMARIES: 0
+  eventTypes: null
+  eventSummaries: null
+}
+[main] 02 Feb 2014 22:16:58,091  INFO com.appdynamics.extension.AlertingExtension - Finished parsing arguments
+[main] 02 Feb 2014 22:16:58,132  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c9ba38: display name [org.springframework.context.support.ClassPathXmlApplicationContext@c9ba38]; startup date [Sun Feb 02 22:16:58 PST 2014]; root of context hierarchy
+[main] 02 Feb 2014 22:16:58,175  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/spring.xml]
+[main] 02 Feb 2014 22:16:58,288  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@c9ba38]: org.springframework.beans.factory.support.DefaultListableBeanFactory@c7b00c
+[main] 02 Feb 2014 22:16:58,321  INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+[main] 02 Feb 2014 22:16:58,327  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c7b00c: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,alertSender]; root of factory hierarchy
+[main] 02 Feb 2014 22:16:58,329  INFO com.appdynamics.extension.opsgenie.OpsGenie - Sending alert to opsGenie
+[main] 02 Feb 2014 22:16:58,329 DEBUG com.appdynamics.extension.opsgenie.OpsGenie - com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null/extest/exc.jsp 
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: ERROR
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: Business Transaction error rate is much higher than normal
+  alertTime: null
+  affectedEntityType: BUSINESS_TRANSACTION
+  summaryMessage: Business Transaction error rate is much higher than normal triggered at Sun Feb 02 22:15:55 PST 2014. This policy was violated because the following conditions were met for the Type:BUSINESS_TRANSACTION, id:454 for the last 10 minute(s):   For Evaluation Entity: JBoss Application - Errors per Minute Condition is greater than 5. Observed value = 244.0
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_INCIDENT_DETAIL&incident=12
+  healthRuleViolation: true
+  applicationId: 2
+  priority: 1
+  notificationName: null
+  notificationId: null
+  NUMBER_OF_EVENT_TYPES: 0
+  notificationInterval: null
+  incidentId: 12
+  PVN_ALERT_TIME: Sun Feb 02 22:15:55 PST 2014
+  policyId: 9
+  PVN_TIME_PERIOD_IN_MINUTES: 10
+  affectedEntityName: /extest/exc.jsp
+  affectedEntityId: 454
+  NUMBER_OF_EVALUATION_ENTITIES: 1
+  NUMBER_OF_EVENT_SUMMARIES: 0
+  eventTypes: null
+  eventSummaries: null
+}
+[main] 02 Feb 2014 22:16:58,487 ERROR com.appdynamics.extension.AlertingExtension - Failed to send alert: null
+java.lang.NullPointerException
+	at com.appdynamics.extension.opsgenie.OpsGenie.sendAlert(OpsGenie.java:65)
+	at com.appdynamics.extension.AlertingExtension.main(AlertingExtension.java:39)
+[main] 02 Feb 2014 22:16:58,771  INFO com.appdynamics.extension.AlertingExtension - Parsing the arguments
+[main] 02 Feb 2014 22:16:58,772 DEBUG com.appdynamics.extension.AlertingExtension - [JBoss, 2, Sun Feb 02 22:15:22 PST 2014, 1, INFO, OpsGenieTest, APP_SERVER_RESTART, 12277, 1, 1, APP_SERVER_RESTART, 1, 1, 12277, Sun Feb 02 22:15:22 PST 2014, 1, INFO, APP_SERVER_RESTART triggered at Sun Feb 02 22:15:22 PST 2014. This policy was violated because the following conditions were met for the Type:MACHINE_INSTANCE, id:3 for the last 1 minute(s): , http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=]
+[main] 02 Feb 2014 22:16:58,775  INFO com.appdynamics.extension.AlertingExtension - Alert object created: com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: Sun Feb 02 22:15:22 PST 2014
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12277
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  notificationName: APP_SERVER_RESTART
+  notificationId: 12277
+  NUMBER_OF_EVENT_TYPES: 1
+  notificationInterval: 1
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@1f33675]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary Object {
+  EVENT_SUMMARY_ID: 
+  EVENT_SUMMARY_TIME: 
+  EVENT_SUMMARY_TYPE: 
+  EVENT_SUMMARY_SEVERITY: 
+  EVENT_SUMMARY_STRING: 
+}]
+}
+[main] 02 Feb 2014 22:16:58,776  INFO com.appdynamics.extension.AlertingExtension - Finished parsing arguments
+[main] 02 Feb 2014 22:16:58,815  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0: display name [org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0]; startup date [Sun Feb 02 22:16:58 PST 2014]; root of context hierarchy
+[main] 02 Feb 2014 22:16:58,860  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/spring.xml]
+[main] 02 Feb 2014 22:16:58,986  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@1e859c0]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b09468
+[main] 02 Feb 2014 22:16:59,022  INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+[main] 02 Feb 2014 22:16:59,029  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b09468: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,alertSender]; root of factory hierarchy
+[main] 02 Feb 2014 22:16:59,031  INFO com.appdynamics.extension.opsgenie.OpsGenie - Sending alert to opsGenie
+[main] 02 Feb 2014 22:16:59,031 DEBUG com.appdynamics.extension.opsgenie.OpsGenie - com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: INFO
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: null
+  alertTime: Sun Feb 02 22:15:22 PST 2014
+  affectedEntityType: null
+  summaryMessage: null
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_EVENT_VIEWER_MODAL&eventSummary=12277
+  healthRuleViolation: false
+  applicationId: 2
+  priority: 1
+  notificationName: APP_SERVER_RESTART
+  notificationId: 12277
+  NUMBER_OF_EVENT_TYPES: 1
+  notificationInterval: 1
+  incidentId: null
+  PVN_ALERT_TIME: null
+  policyId: null
+  PVN_TIME_PERIOD_IN_MINUTES: null
+  affectedEntityName: null
+  affectedEntityId: null
+  NUMBER_OF_EVALUATION_ENTITIES: 0
+  NUMBER_OF_EVENT_SUMMARIES: 1
+  eventTypes: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Type@1f33675]
+  eventSummaries: [com.appdynamics.opsgenie.type.AD_AlertData$Event_Summary Object {
+  EVENT_SUMMARY_ID: 
+  EVENT_SUMMARY_TIME: 
+  EVENT_SUMMARY_TYPE: 
+  EVENT_SUMMARY_SEVERITY: 
+  EVENT_SUMMARY_STRING: 
+}]
+}
+[main] 02 Feb 2014 22:17:00,529  INFO com.appdynamics.extension.opsgenie.OpsGenie - alert sent, alertId: 015e7582-8516-4fa9-9646-283e795319f2
+[main] 02 Feb 2014 22:17:00,529  INFO com.appdynamics.extension.AlertingExtension - -------------Alert Sent!---------------
+[main] 02 Feb 2014 22:19:55,763  INFO com.appdynamics.extension.AlertingExtension - Parsing the arguments
+[main] 02 Feb 2014 22:19:55,764 DEBUG com.appdynamics.extension.AlertingExtension - [JBoss, 2, Sun Feb 02 22:18:55 PST 2014, 1, ERROR, OpsGenieTest, Business Transaction error rate is much higher than normal, 9, 10, BUSINESS_TRANSACTION, /extest/exc.jsp, 454, 1, APPLICATION, JBoss, 2, 1, APPLICATION, JBoss, 2, Errors per Minute Condition, 385, GREATER_THAN, ABSOLUTE, 5, 248.0, Business Transaction error rate is much higher than normal triggered at Sun Feb 02 22:18:55 PST 2014. This policy was violated because the following conditions were met for the Type:BUSINESS_TRANSACTION, id:454 for the last 10 minute(s):   For Evaluation Entity: JBoss Application - Errors per Minute Condition is greater than 5. Observed value = 248.0, 12, http://ubuj:8090/controller/#location=APP_INCIDENT_DETAIL&incident=, POLICY_OPEN_CRITICAL]
+[main] 02 Feb 2014 22:19:55,767  INFO com.appdynamics.extension.AlertingExtension - Alert object created: com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null/extest/exc.jsp 
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: ERROR
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: Business Transaction error rate is much higher than normal
+  alertTime: null
+  affectedEntityType: BUSINESS_TRANSACTION
+  summaryMessage: Business Transaction error rate is much higher than normal triggered at Sun Feb 02 22:18:55 PST 2014. This policy was violated because the following conditions were met for the Type:BUSINESS_TRANSACTION, id:454 for the last 10 minute(s):   For Evaluation Entity: JBoss Application - Errors per Minute Condition is greater than 5. Observed value = 248.0
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_INCIDENT_DETAIL&incident=12
+  healthRuleViolation: true
+  applicationId: 2
+  priority: 1
+  notificationName: null
+  notificationId: null
+  NUMBER_OF_EVENT_TYPES: 0
+  notificationInterval: null
+  incidentId: 12
+  PVN_ALERT_TIME: Sun Feb 02 22:18:55 PST 2014
+  policyId: 9
+  PVN_TIME_PERIOD_IN_MINUTES: 10
+  affectedEntityName: /extest/exc.jsp
+  affectedEntityId: 454
+  NUMBER_OF_EVALUATION_ENTITIES: 1
+  NUMBER_OF_EVENT_SUMMARIES: 0
+  eventTypes: null
+  eventSummaries: null
+}
+[main] 02 Feb 2014 22:19:55,767  INFO com.appdynamics.extension.AlertingExtension - Finished parsing arguments
+[main] 02 Feb 2014 22:19:55,805  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c9ba38: display name [org.springframework.context.support.ClassPathXmlApplicationContext@c9ba38]; startup date [Sun Feb 02 22:19:55 PST 2014]; root of context hierarchy
+[main] 02 Feb 2014 22:19:55,854  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/spring.xml]
+[main] 02 Feb 2014 22:19:55,974  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@c9ba38]: org.springframework.beans.factory.support.DefaultListableBeanFactory@c7b00c
+[main] 02 Feb 2014 22:19:56,008  INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+[main] 02 Feb 2014 22:19:56,015  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c7b00c: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,alertSender]; root of factory hierarchy
+[main] 02 Feb 2014 22:19:56,018  INFO com.appdynamics.extension.opsgenie.OpsGenie - Sending alert to opsGenie
+[main] 02 Feb 2014 22:19:56,018 DEBUG com.appdynamics.extension.opsgenie.OpsGenie - com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null/extest/exc.jsp 
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: ERROR
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: Business Transaction error rate is much higher than normal
+  alertTime: null
+  affectedEntityType: BUSINESS_TRANSACTION
+  summaryMessage: Business Transaction error rate is much higher than normal triggered at Sun Feb 02 22:18:55 PST 2014. This policy was violated because the following conditions were met for the Type:BUSINESS_TRANSACTION, id:454 for the last 10 minute(s):   For Evaluation Entity: JBoss Application - Errors per Minute Condition is greater than 5. Observed value = 248.0
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_INCIDENT_DETAIL&incident=12
+  healthRuleViolation: true
+  applicationId: 2
+  priority: 1
+  notificationName: null
+  notificationId: null
+  NUMBER_OF_EVENT_TYPES: 0
+  notificationInterval: null
+  incidentId: 12
+  PVN_ALERT_TIME: Sun Feb 02 22:18:55 PST 2014
+  policyId: 9
+  PVN_TIME_PERIOD_IN_MINUTES: 10
+  affectedEntityName: /extest/exc.jsp
+  affectedEntityId: 454
+  NUMBER_OF_EVALUATION_ENTITIES: 1
+  NUMBER_OF_EVENT_SUMMARIES: 0
+  eventTypes: null
+  eventSummaries: null
+}
+[main] 02 Feb 2014 22:19:56,191 ERROR com.appdynamics.extension.AlertingExtension - Failed to send alert: null
+java.lang.NullPointerException
+	at com.appdynamics.extension.opsgenie.OpsGenie.sendAlert(OpsGenie.java:65)
+	at com.appdynamics.extension.AlertingExtension.main(AlertingExtension.java:39)
+[main] 02 Feb 2014 22:22:56,082  INFO com.appdynamics.extension.AlertingExtension - Parsing the arguments
+[main] 02 Feb 2014 22:22:56,083 DEBUG com.appdynamics.extension.AlertingExtension - [JBoss, 2, Sun Feb 02 22:21:55 PST 2014, 1, ERROR, OpsGenieTest, Business Transaction error rate is much higher than normal, 9, 10, BUSINESS_TRANSACTION, /extest/exc.jsp, 454, 1, APPLICATION, JBoss, 2, 1, APPLICATION, JBoss, 2, Errors per Minute Condition, 385, GREATER_THAN, ABSOLUTE, 5, 273.0, Business Transaction error rate is much higher than normal triggered at Sun Feb 02 22:21:55 PST 2014. This policy was violated because the following conditions were met for the Type:BUSINESS_TRANSACTION, id:454 for the last 10 minute(s):   For Evaluation Entity: JBoss Application - Errors per Minute Condition is greater than 5. Observed value = 273.0, 12, http://ubuj:8090/controller/#location=APP_INCIDENT_DETAIL&incident=, POLICY_OPEN_CRITICAL]
+[main] 02 Feb 2014 22:22:56,086  INFO com.appdynamics.extension.AlertingExtension - Alert object created: com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null/extest/exc.jsp 
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: ERROR
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: Business Transaction error rate is much higher than normal
+  alertTime: null
+  affectedEntityType: BUSINESS_TRANSACTION
+  summaryMessage: Business Transaction error rate is much higher than normal triggered at Sun Feb 02 22:21:55 PST 2014. This policy was violated because the following conditions were met for the Type:BUSINESS_TRANSACTION, id:454 for the last 10 minute(s):   For Evaluation Entity: JBoss Application - Errors per Minute Condition is greater than 5. Observed value = 273.0
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_INCIDENT_DETAIL&incident=12
+  healthRuleViolation: true
+  applicationId: 2
+  priority: 1
+  notificationName: null
+  notificationId: null
+  NUMBER_OF_EVENT_TYPES: 0
+  notificationInterval: null
+  incidentId: 12
+  PVN_ALERT_TIME: Sun Feb 02 22:21:55 PST 2014
+  policyId: 9
+  PVN_TIME_PERIOD_IN_MINUTES: 10
+  affectedEntityName: /extest/exc.jsp
+  affectedEntityId: 454
+  NUMBER_OF_EVALUATION_ENTITIES: 1
+  NUMBER_OF_EVENT_SUMMARIES: 0
+  eventTypes: null
+  eventSummaries: null
+}
+[main] 02 Feb 2014 22:22:56,086  INFO com.appdynamics.extension.AlertingExtension - Finished parsing arguments
+[main] 02 Feb 2014 22:22:56,124  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c9ba38: display name [org.springframework.context.support.ClassPathXmlApplicationContext@c9ba38]; startup date [Sun Feb 02 22:22:56 PST 2014]; root of context hierarchy
+[main] 02 Feb 2014 22:22:56,168  INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/spring.xml]
+[main] 02 Feb 2014 22:22:56,292  INFO org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@c9ba38]: org.springframework.beans.factory.support.DefaultListableBeanFactory@c7b00c
+[main] 02 Feb 2014 22:22:56,327  INFO org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+[main] 02 Feb 2014 22:22:56,334  INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c7b00c: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,alertSender]; root of factory hierarchy
+[main] 02 Feb 2014 22:22:56,336  INFO com.appdynamics.extension.opsgenie.OpsGenie - Sending alert to opsGenie
+[main] 02 Feb 2014 22:22:56,336 DEBUG com.appdynamics.extension.opsgenie.OpsGenie - com.appdynamics.opsgenie.type.AD_AlertData Object {
+  applicationName: JBoss
+  triggeredBy: null
+  nodes: null
+  BTs: null/extest/exc.jsp 
+  machines: null
+  tiers: null
+  eventTime: null
+  severity: ERROR
+  type: null
+  subtype: null
+  link: null
+  tag: OpsGenieTest
+  policyName: Business Transaction error rate is much higher than normal
+  alertTime: null
+  affectedEntityType: BUSINESS_TRANSACTION
+  summaryMessage: Business Transaction error rate is much higher than normal triggered at Sun Feb 02 22:21:55 PST 2014. This policy was violated because the following conditions were met for the Type:BUSINESS_TRANSACTION, id:454 for the last 10 minute(s):   For Evaluation Entity: JBoss Application - Errors per Minute Condition is greater than 5. Observed value = 273.0
+  deepLinkURL: http://ubuj:8090/controller/#location=APP_INCIDENT_DETAIL&incident=12
+  healthRuleViolation: true
+  applicationId: 2
+  priority: 1
+  notificationName: null
+  notificationId: null
+  NUMBER_OF_EVENT_TYPES: 0
+  notificationInterval: null
+  incidentId: 12
+  PVN_ALERT_TIME: Sun Feb 02 22:21:55 PST 2014
+  policyId: 9
+  PVN_TIME_PERIOD_IN_MINUTES: 10
+  affectedEntityName: /extest/exc.jsp
+  affectedEntityId: 454
+  NUMBER_OF_EVALUATION_ENTITIES: 1
+  NUMBER_OF_EVENT_SUMMARIES: 0
+  eventTypes: null
+  eventSummaries: null
+}
+[main] 02 Feb 2014 22:22:56,510 ERROR com.appdynamics.extension.AlertingExtension - Failed to send alert: null
+java.lang.NullPointerException
+	at com.appdynamics.extension.opsgenie.OpsGenie.sendAlert(OpsGenie.java:65)
+	at com.appdynamics.extension.AlertingExtension.main(AlertingExtension.java:39)
