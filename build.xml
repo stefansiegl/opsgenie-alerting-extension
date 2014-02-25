@@ -112,25 +112,25 @@
             </else>
         </if>
 
-        <copy todir="${build.home}/temp/custom/actions/opsGenie">
+        <copy todir="${build.home}/temp/custom/actions/opsgenie">
             <fileset dir="${script.home}" includes="opsGenie*"/>
         </copy>
 
         <chmod perm="a+x">
-            <fileset dir="${build.home}/temp/custom/actions/opsGenie" includes="opsGenie*"/>
+            <fileset dir="${build.home}/temp/custom/actions/opsgenie" includes="opsgenie*"/>
         </chmod>
 
-        <copy todir="${build.home}/temp/custom/actions/opsGenie/conf">
+        <copy todir="${build.home}/temp/custom/actions/opsgenie/conf">
 
             <fileset file="${conf.home}/log4j.dtd"/>
             <fileset file="${conf.home}/log4j.xml"/>
         </copy>
 
-        <copy todir="${build.home}/temp/custom/actions/opsGenie/lib">
+        <copy todir="${build.home}/temp/custom/actions/opsgenie/lib">
             <fileset file="${conf.home}/config.properties"/>
         </copy>
 
-        <copy todir="${build.home}/temp/custom/actions/opsGenie/lib">
+        <copy todir="${build.home}/temp/custom/actions/opsgenie/lib">
             <fileset dir="${lib.home}"/>
 
         </copy>
