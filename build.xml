@@ -26,6 +26,7 @@
     <property name="src.dir" value="src/main/java"/>
 
     <property name="conf.home" value="src/main/conf"/>
+    <property name="licenses.home" value="src/main/licenses"/>
 
     <property name="custom.actions" value="src/main/custom/actions"/>
 
@@ -96,6 +97,7 @@
             </or>
             <then>
                 <copy tofile="${build.home}/temp/custom/actions/custom.xml" file="${custom.actions}/custom.xml.linux"/>
+
             </then>
             <elseif>
                 <os family="windows"/>
@@ -116,14 +118,21 @@
             <fileset dir="${script.home}" includes="opsGenie*"/>
         </copy>
 
+        <copy todir="${build.home}/temp/">
+            <fileset file="${licenses.home}/LICENSE.txt"/>
+            <fileset file="${licenses.home}/NOTICE.txt"/>
+        </copy>
+
         <chmod perm="a+x">
             <fileset dir="${build.home}/temp/custom/actions/opsgenie" includes="opsgenie*"/>
         </chmod>
+
 
         <copy todir="${build.home}/temp/custom/actions/opsgenie/conf">
 
             <fileset file="${conf.home}/log4j.dtd"/>
             <fileset file="${conf.home}/log4j.xml"/>
+
         </copy>
 
         <copy todir="${build.home}/temp/custom/actions/opsgenie/lib">
