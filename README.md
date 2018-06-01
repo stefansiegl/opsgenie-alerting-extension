@@ -9,7 +9,8 @@ to the OpsGenie system for further delivery to the individual recipients.
 
 This extension is configured as a custom action on the AppDynamics controller (see Installation).
 
-
+## Extension
+This is a quick fix for a customer project in which we need to report to OpsGenie. Unfortunately right now the proxy settings in AppDynamics do not apply to HTTP Request templates, thus the usual integration with OpsGenie is not working in our setup (we need a proxy). Thus in this quick fix, I simply set the proxy within the code. A more suitable solution would be to set the proxy in the configuration, but I feel that this is not a time well spent, as the integration should be done via HTTP Request Templates anyway, so this is just there until the bug is fixed with AppDynamics.
 
 ##Installation
 

@@ -46,7 +46,13 @@ public class OpsGenie implements AlertSender {
     public void sendAlert(AD_AlertData alertData) throws Exception {
         logger.info("Sending alert to opsGenie");
         logger.debug(alertData);
-        OpsGenieClient client = new OpsGenieClient();
+
+
+        com.ifountain.opsgenie.client.util.ClientConfiguration configuration = new com.ifountain.opsgenie.client.util.ClientConfiguration();
+        com.ifountain.opsgenie.client.util.ClientProxyConfiguration proxy = new com.ifountain.opsgenie.client.util.ClientProxyConfiguration("53.99.91.27", 3128);
+        configuration.setClientProxyConfiguration(proxy);
+        OpsGenieClient client = new OpsGenieClient(configuration);
+
         CreateAlertRequest request = new CreateAlertRequest();
         request.setCustomerKey(getCustomerKey());
 
